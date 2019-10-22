@@ -1,0 +1,363 @@
+EESchema Schematic File Version 4
+LIBS:PiRoombaBoard-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "PiRoombaBoard"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R3
+U 1 1 5D81FCEB
+P 6100 4150
+F 0 "R3" V 5900 4150 50  0000 C CNN
+F 1 "10k" V 5984 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 4150 50  0001 C CNN
+F 3 "~" H 6100 4150 50  0001 C CNN
+	1    6100 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5D822C59
+P 5750 4850
+F 0 "#PWR07" H 5750 4600 50  0001 C CNN
+F 1 "GND" H 5755 4677 50  0000 C CNN
+F 2 "" H 5750 4850 50  0001 C CNN
+F 3 "" H 5750 4850 50  0001 C CNN
+	1    5750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4150 5950 4150
+Connection ~ 5750 4150
+$Comp
+L Device:R R2
+U 1 1 5D820D1D
+P 5750 4500
+F 0 "R2" H 5820 4546 50  0000 L CNN
+F 1 "10k" H 5820 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5680 4500 50  0001 C CNN
+F 3 "~" H 5750 4500 50  0001 C CNN
+	1    5750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4150 5750 4350
+$Comp
+L Device:R R4
+U 1 1 5D826886
+P 6100 4250
+F 0 "R4" V 6200 4250 50  0000 C CNN
+F 1 "10k" V 6300 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 4250 50  0001 C CNN
+F 3 "~" H 6100 4250 50  0001 C CNN
+	1    6100 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 5D829D90
+P 7000 4300
+F 0 "J3" H 6972 4274 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 6972 4183 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7108 4589 50  0001 C CNN
+F 3 "~" H 7000 4300 50  0001 C CNN
+	1    7000 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4700 6500 4700
+Wire Wire Line
+	6500 4700 6500 4600
+Wire Wire Line
+	6500 4600 6800 4600
+Wire Wire Line
+	5750 4700 5750 4650
+Wire Wire Line
+	6250 4250 6650 4250
+Wire Wire Line
+	6650 4250 6650 4200
+Wire Wire Line
+	6650 4200 6700 4200
+Wire Wire Line
+	6250 4150 6400 4150
+Wire Wire Line
+	6400 4150 6400 4300
+Wire Wire Line
+	6400 4300 6800 4300
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D82EAC3
+P 6400 3500
+F 0 "TP2" H 6458 3618 50  0000 L CNN
+F 1 "TX" H 6458 3527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6600 3500 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D82FB6B
+P 6700 3500
+F 0 "TP3" H 6758 3618 50  0000 L CNN
+F 1 "RX" H 6758 3527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6900 3500 50  0001 C CNN
+F 3 "~" H 6900 3500 50  0001 C CNN
+	1    6700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D8300D7
+P 7000 3500
+F 0 "TP4" H 7058 3618 50  0000 L CNN
+F 1 "GND" H 7058 3527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7200 3500 50  0001 C CNN
+F 3 "~" H 7200 3500 50  0001 C CNN
+	1    7000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D830B06
+P 6050 3500
+F 0 "TP1" H 6108 3618 50  0000 L CNN
+F 1 "PWR" H 6108 3527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6250 3500 50  0001 C CNN
+F 3 "~" H 6250 3500 50  0001 C CNN
+	1    6050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4200 6700 3500
+Connection ~ 6700 4200
+Wire Wire Line
+	6700 4200 6800 4200
+Wire Wire Line
+	6400 4150 6400 3500
+Connection ~ 6400 4150
+Wire Wire Line
+	7000 3500 7000 3800
+Wire Wire Line
+	7000 3800 6500 3800
+Wire Wire Line
+	6500 3800 6500 4600
+Connection ~ 6500 4600
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5D8328B2
+P 5100 3700
+F 0 "J2" H 5208 3981 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 5208 3890 50  0000 C CNN
+F 2 "Connector_Pin:Pololu_D24V90F5" H 5100 3700 50  0001 C CNN
+F 3 "~" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3500 6050 3700
+$Comp
+L Device:R R1
+U 1 1 5D86DD10
+P 3300 4650
+F 0 "R1" V 3100 4650 50  0000 C CNN
+F 1 "220" V 3184 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3230 4650 50  0001 C CNN
+F 3 "~" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D86E3A6
+P 3300 4250
+F 0 "D1" V 3339 4133 50  0000 R CNN
+F 1 "OSHR1608C1A" V 3248 4133 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3300 4250 50  0001 C CNN
+F 3 "~" H 3300 4250 50  0001 C CNN
+	1    3300 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D87249A
+P 3650 4950
+F 0 "#PWR02" H 3650 4700 50  0001 C CNN
+F 1 "GND" H 3655 4777 50  0000 C CNN
+F 2 "" H 3650 4950 50  0001 C CNN
+F 3 "" H 3650 4950 50  0001 C CNN
+	1    3650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5D885C18
+P 4000 3950
+F 0 "J1" H 4050 4367 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4050 4276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 4000 3950 50  0001 C CNN
+F 3 "~" H 4000 3950 50  0001 C CNN
+	1    4000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4100 3300 4050
+Wire Wire Line
+	3300 4050 3800 4050
+Wire Wire Line
+	3300 4400 3300 4500
+Wire Wire Line
+	3300 4800 3300 4900
+Wire Wire Line
+	3300 4900 3650 4900
+Wire Wire Line
+	3650 4900 3650 4950
+Wire Wire Line
+	3650 4150 3800 4150
+Connection ~ 3650 4900
+Wire Wire Line
+	4950 4250 5950 4250
+Wire Wire Line
+	4400 3750 4300 3750
+Wire Wire Line
+	4400 3750 4400 3850
+Wire Wire Line
+	4300 3850 4400 3850
+Wire Wire Line
+	5300 3700 6050 3700
+$Comp
+L power:GND #PWR06
+U 1 1 5D8D376C
+P 5500 3950
+F 0 "#PWR06" H 5500 3700 50  0001 C CNN
+F 1 "GND" H 5505 3777 50  0000 C CNN
+F 2 "" H 5500 3950 50  0001 C CNN
+F 3 "" H 5500 3950 50  0001 C CNN
+	1    5500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3600 5500 3600
+Wire Wire Line
+	5500 3600 5500 3800
+Wire Wire Line
+	5300 3800 5500 3800
+Connection ~ 5500 3800
+Wire Wire Line
+	5500 3800 5500 3950
+Wire Wire Line
+	5300 3900 5300 4000
+Wire Wire Line
+	5300 4000 4850 4000
+Wire Wire Line
+	4850 3750 4850 4000
+Connection ~ 4400 3750
+Connection ~ 5750 4700
+Wire Wire Line
+	5750 4700 5750 4850
+Wire Wire Line
+	3650 4150 3650 4900
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5D9A832A
+P 3300 3000
+F 0 "#FLG01" H 3300 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3300 3173 50  0000 C CNN
+F 2 "" H 3300 3000 50  0001 C CNN
+F 3 "~" H 3300 3000 50  0001 C CNN
+	1    3300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5D9A87EA
+P 3300 3300
+F 0 "#PWR01" H 3300 3050 50  0001 C CNN
+F 1 "GND" H 3305 3127 50  0000 C CNN
+F 2 "" H 3300 3300 50  0001 C CNN
+F 3 "" H 3300 3300 50  0001 C CNN
+	1    3300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3300 3300 3000
+Wire Wire Line
+	4400 3750 4600 3750
+$Comp
+L power:GND #PWR04
+U 1 1 5D8ABABA
+P 4400 4250
+F 0 "#PWR04" H 4400 4000 50  0001 C CNN
+F 1 "GND" H 4405 4077 50  0000 C CNN
+F 2 "" H 4400 4250 50  0001 C CNN
+F 3 "" H 4400 4250 50  0001 C CNN
+	1    4400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3950 4400 3950
+$Comp
+L power:+5V #PWR05
+U 1 1 5D88F5F5
+P 4600 3300
+F 0 "#PWR05" H 4600 3150 50  0001 C CNN
+F 1 "+5V" H 4615 3473 50  0000 C CNN
+F 2 "" H 4600 3300 50  0001 C CNN
+F 3 "" H 4600 3300 50  0001 C CNN
+	1    4600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3750 4600 3300
+Connection ~ 4600 3750
+Wire Wire Line
+	4600 3750 4850 3750
+$Comp
+L power:+5V #PWR03
+U 1 1 5D890A32
+P 3700 3350
+F 0 "#PWR03" H 3700 3200 50  0001 C CNN
+F 1 "+5V" H 3715 3523 50  0000 C CNN
+F 2 "" H 3700 3350 50  0001 C CNN
+F 3 "" H 3700 3350 50  0001 C CNN
+	1    3700 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5D893116
+P 3700 3000
+F 0 "#FLG02" H 3700 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 3173 50  0000 C CNN
+F 2 "" H 3700 3000 50  0001 C CNN
+F 3 "~" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3350 3700 3000
+NoConn ~ 3800 3750
+NoConn ~ 3800 3850
+NoConn ~ 3800 3950
+NoConn ~ 6800 4400
+NoConn ~ 6800 4500
+NoConn ~ 6800 4100
+Wire Wire Line
+	4400 4250 4400 3950
+Wire Wire Line
+	4950 4050 4300 4050
+Wire Wire Line
+	4950 4050 4950 4250
+Wire Wire Line
+	4300 4150 5750 4150
+$EndSCHEMATC
